@@ -1,0 +1,1 @@
+ALTER TABLE "medical_history" ALTER COLUMN "bmi" SET DATA TYPE integer;

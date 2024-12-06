@@ -1,0 +1,1 @@
+ALTER TABLE "medical_history" ALTER COLUMN "cholesterol_level" SET DATA TYPE integer;
