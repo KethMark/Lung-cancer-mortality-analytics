@@ -65,9 +65,7 @@ const chartConfig = {
 
 export function GenderComponent() {
   const {
-    data: genderData,
-    isLoading,
-    isError,
+    data: genderData
   } = useQuery({
     queryKey: ['genderDistribution'],
     queryFn: fetchGenderDistribution,

@@ -53,9 +53,7 @@ const chartConfig = {
 
 export function GenderAreaComponent() {
   const { 
-    data, 
-    isLoading, 
-    error 
+    data
   } = useQuery({
     queryKey: ['treatmentStats'],
     queryFn: fetchTreatmentStats,

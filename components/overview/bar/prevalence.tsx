@@ -4,9 +4,7 @@ import { TrendingUp } from "lucide-react";
 import {
   Bar,
   BarChart,
-  CartesianGrid,
   LabelList,
-  Rectangle,
   XAxis,
   YAxis,
 } from "recharts";

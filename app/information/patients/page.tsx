@@ -12,7 +12,7 @@ const fetchPatients = async (): Promise<Patient[]> => {
 }
 
 const page = () => {
-  const { data: patients, isLoading, error } = useQuery({
+  const { data: patients } = useQuery({
     queryKey: ['patients'],
     queryFn: fetchPatients,
     initialData: initialDataPatients

@@ -8,17 +8,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { FileTextIcon, IdCardIcon } from "@radix-ui/react-icons";
+import { FileTextIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
 import { MedicalTable } from "@/components/medical_history/table";
 import { TreatmentTable } from "@/components/treatment_details/table";

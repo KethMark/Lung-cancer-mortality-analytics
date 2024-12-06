@@ -13,7 +13,6 @@ export async function GET() {
       .from(treatment_details)
       .groupBy(treatment_details.cancer_stage);
 
-    // Map Roman numerals to numeric values for sorting
     const romanToNumber: Record<string, number> = {
       I: 1,
       II: 2,
@@ -21,20 +20,18 @@ export async function GET() {
       IV: 4,
     };
 
-    // Sort the data numerically based on stage
     const sortedStageData = stageData.sort((a, b) => {
-      const stageA = a.stage.split(' ')[1]; // Extract Roman numeral
+      const stageA = a.stage.split(' ')[1]; 
       const stageB = b.stage.split(' ')[1];
       return romanToNumber[stageA] - romanToNumber[stageB];
     });
 
-    // Format the sorted data for the chart
     const cancerStagePieChart = sortedStageData.map(({ stage, count }) => {
-      const romanNumeral = stage.split(' ')[1]; // Extract Roman numeral
+      const romanNumeral = stage.split(' ')[1]; 
       return {
         name: romanNumeral,
         value: count,
-        fill: `var(--color-${romanNumeral})`, // Color based on the Roman numeral
+        fill: `var(--color-${romanNumeral})`, 
       };
     });
 

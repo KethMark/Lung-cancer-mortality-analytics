@@ -14,7 +14,6 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar";
 import {
-  BackpackIcon,
   DashboardIcon,
   PersonIcon,
 } from "@radix-ui/react-icons";
