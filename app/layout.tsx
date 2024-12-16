@@ -68,7 +68,7 @@ export default function RootLayout({
                   <p>DA4A Group 7</p>
                 </div>
                 <DropdownMenu >
-                  <DropdownMenuTrigger className="mr-5">
+                  <DropdownMenuTrigger className="mr-5" asChild>
                     <Button>Teams</Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
